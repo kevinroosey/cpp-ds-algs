@@ -16,6 +16,21 @@ for (int i = 0; i < myVector.size(); i++) {
 }
 ```
 
-### Relevant data structures:
+## Relevant data structures:
 
 **Hash maps**: Maps are a collection of key-value pairs. The keys in maps MUST be unique, something that can be exploited in Array questions.
+
+### instantiating a hashmap
+```
+std::map<int, std::string> myMap;
+```
+
+### Inserting into a map
+```
+// Insert elements into the map using the subscript operator
+myMap[1] = "Apple";
+myMap[2] = "Banana";
+
+// Insert elements using the insert method
+myMap.insert(std::make_pair(3, "Cherry"));
+```
